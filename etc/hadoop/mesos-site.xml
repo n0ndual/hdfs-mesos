@@ -44,19 +44,19 @@
   <property>
     <name>mesos.hdfs.state.zk</name>
     <description>Comma-separated hostname-port pairs of zookeeper node locations for HDFS framework state information</description>
-    <value>zk1:2181</value>
+    <value>mesos-master.vagrant:2181</value>
   </property>
 
   <property>
     <name>mesos.master.uri</name>
     <description>Zookeeper entry for mesos master location</description>
-    <value>zk://zk1:2181/mesos</value>
+    <value>zk://mesos-master.vagrant:2181/mesos</value>
   </property>
 
   <property>
     <name>mesos.hdfs.zkfc.ha.zookeeper.quorum</name>
     <description>Comma-separated list of zookeeper hostname-port pairs for HDFS HA features</description>
-    <value>zk1:2181</value>
+    <value>mesos-master.vagrant:2181</value>
   </property>
 
   <property>
@@ -90,7 +90,7 @@
   </property>
 
   <!-- Additional settings for fine-tuning -->
-
+  
   <property>
     <name>mesos.hdfs.jvm.overhead</name>
     <description>Multiplier on resources reserved in order to account for JVM allocation</description>
@@ -104,37 +104,37 @@
 
   <property>
     <name>mesos.hdfs.namenode.heap.size</name>
-    <value>256</value>
+    <value>128</value>
   </property>
 
   <property>
     <name>mesos.hdfs.datanode.heap.size</name>
-    <value>256</value>
+    <value>128</value>
   </property>
 
   <property>
     <name>mesos.hdfs.executor.heap.size</name>
-    <value>256</value>
+    <value>128</value>
   </property>
 
   <property>
     <name>mesos.hdfs.executor.cpus</name>
-    <value>0.5</value>
+    <value>0.2</value>
   </property>
 
   <property>
     <name>mesos.hdfs.namenode.cpus</name>
-    <value>0.5</value>
+    <value>0.2</value>
   </property>
 
   <property>
     <name>mesos.hdfs.journalnode.cpus</name>
-    <value>0.5</value>
+    <value>0.2</value>
   </property>
 
   <property>
     <name>mesos.hdfs.datanode.cpus</name>
-    <value>0.5</value>
+    <value>0.2</value>
   </property>
 
   <property>
